@@ -33,7 +33,7 @@ registerFactoryAdapter(IAdditionalAttrs, AdditionalAttrs)
 
 
 class JSON(JSONifyBase):
-    """Return the content the IAdditionalAttrs as a dict"""
+    """Return the content of IAdditionalAttrs as a dict"""
     
     def data(self, record):
         return {'name': record.name, 'value': record.value}
